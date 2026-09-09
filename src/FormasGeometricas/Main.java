@@ -4,22 +4,28 @@ public class Main {
 
     static void main(String[] args) {
 
-        // Execução e construção dos objetos
-
-        Circulo c1 = new Circulo(3);
-        Quadrado q1 = new Quadrado(9);
-        Triangulo t1 = new Triangulo(5.6, 6.0);
-
-        c1.desenhar();
-        IO.println("Area circulo: " + c1.calcularArea());
-        IO.println();
+        Quadrado q1 = new Quadrado(15.5);
+        Triangulo t1 = new Triangulo(11.2,6.47);
+        Circulo c1 = new Circulo(5.56);
 
         q1.desenhar();
-        IO.println("Area circulo: " + q1.calcularArea());
+        IO.println("Lado -> " + q1.getLado());
+        IO.println("Area -> " + q1.calcularArea());
+        IO.println("===================================");
         IO.println();
 
+
         t1.desenhar();
-        IO.println("Area circulo: " + t1.calcularArea());
+        IO.println("Base -> " + t1.getBase());
+        IO.println("Altura -> " + t1.getAltura());
+        IO.println("Area -> " + t1.calcularArea());
+        IO.println("===================================");
+        IO.println();
+
+        c1.desenhar();
+        IO.println("Raio -> " + c1.getRaio());
+        IO.println("Area -> " + c1.calcularArea());
+        IO.println("===================================");
 
 
     }
